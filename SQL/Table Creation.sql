@@ -1,4 +1,4 @@
-create database lms;
+-- create database lms;
 
 use lms;
 
@@ -11,6 +11,7 @@ constraint pk_book primary key(book_id));
 -- BOOK_AUTHORS TABLE CREATION
 create table book_authors (book_id varchar(10) not null, author_name varchar(200),
 constraint fk_book_authors_book foreign key(book_id) references book(book_id));
+
 
 
 
